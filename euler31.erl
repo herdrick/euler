@@ -1,5 +1,5 @@
 % Project Euler problem 31 
-% my first Erlang program. pretty ugly and not idiomatic, mostly.
+% my first Erlang program. pretty ugly and not idiomatic, mostly. uses the notorious process dictionary for state, specially to hold the graph search frontier queue and explored set.
 % uses breadth-first search 
 % uncomment the io:format statement with 'SOLUTION' to see all solutions
 
