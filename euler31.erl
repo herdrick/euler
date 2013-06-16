@@ -1,4 +1,5 @@
 % Project Euler problem 31 
+% usage: euler31:solve(200, [1, 2, 5, 10, 20, 50, 100, 200]).
 % my first Erlang program. pretty ugly and not idiomatic, mostly. uses the notorious process dictionary for state, specially to hold the graph search frontier queue and explored set.
 % uses breadth-first search 
 % uncomment the io:format statement with 'SOLUTION' to see all solutions
@@ -72,3 +73,4 @@ coins_graph_search(Target, Coins, Values, Values_length) ->
 solve(Target,Values) ->
          init_params(),
          coins_graph_search(Target,lists:duplicate(length(Values), 0),Values,length(Values)).
+
